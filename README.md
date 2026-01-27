@@ -23,9 +23,8 @@ Uber has two main user groups:
 - **Driver & Rider Ratings:** After each trip, both parties can rate each other, encouraging quality service.
 - **Push Notifications:** Users receive updates such as driver arrival alerts, trip start, and trip end notifications.
 - **Safety Features:** The app includes SOS/emergency buttons and the ability to share trip status with contacts.
-- **Delivery Feature:** Users can place delivery orders through the app, and a courier delivers items to the specified location.
+- **Delivery Feature:** Users can place delivery orders through the app, and a courier delivers items to the specified fare splitting, which lets you easily divide the cost of a ride evenly with friends or group members directly in the app, avoiding awkward math or payments later.
 
----
 
 ## Part B: Thinking Behind the Scenes
 
