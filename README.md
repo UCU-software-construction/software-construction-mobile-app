@@ -237,3 +237,15 @@ One of the most surprising aspects of analyzing this app was the level of comple
 This exercise also helped us understand why writing “working code” is not sufficient for software systems at this scale. In large applications like Uber, code must not only work but also be maintainable, scalable, secure, and resilient to failures. A solution that works for a small number of users may fail when millions of users interact with the system simultaneously. Engineers must therefore consider performance, error handling, future changes, and integration with other components, not just whether the code produces the correct output.
 
 From a teamwork perspective, we learned that effective collaboration is essential when dealing with complex software systems. Different members of the group focused on different aspects of the app, such as features, architecture, and potential challenges, which made it clear that no single person can fully understand or build such a system alone. Clear communication, division of responsibilities, and alignment on shared understanding were key to completing the task successfully. This reflects real-world software development, where teamwork and coordination are just as important as technical skills.
+
+## Contribution Declaration
+## Group Member Contributions
+
+| Name               | Responsibility |
+|--------------------|----------------|
+| Alvin Rubagumya    | Identified and explained key software engineering challenges involved in building and maintaining the Uber application. |
+| Agaba Itungo       | Analyzed the Uber app by explaining the problem it solves, identifying its primary users, and outlining its main features. |
+| Mark Calvin Obba   | Focused on software change and maintainability by analyzing a change scenario and its impact on the application. |
+| Nathaniel Mugenyi | Analyzed what happens behind the scenes for Uber’s features, including the user interface, backend systems, APIs, and data handling. |
+| Isooba M Rachel   | Organized, structured, and finalized the `README.md` file on GitHub to ensure clarity, consistency, and completeness. |
+
