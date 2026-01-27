@@ -205,4 +205,5 @@ From a maintainability standpoint, adding Uganda-specific payment logic risks in
 Scalability is another challenge, as mobile money providers may have rate limits or performance constraints that differ from global card processors. Uber would need to design the system to handle spikes in payment requests without overwhelming local providers or degrading user experience.
 
 Finally, regulatory and compliance requirements add further complexity. Financial regulations, data protection laws, and telecom policies in Uganda may require additional validation, auditing, and reporting mechanisms, increasing development time and ongoing maintenance costs.
+
 ---
