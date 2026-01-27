@@ -1,34 +1,5 @@
 # software-construction-mobile-app
 
-Building and maintaining a large-scale ride-hailing application such as Uber involves several complex software engineering challenges. These challenges arise from the need to support millions of users, operate in real time and continuously evolve the system without disrupting existing services;
-
-1. Scalability and Performance
-
-Uber must handle a very high volume of concurrent users including riders and drivers across multiple regions. The system needs to efficiently process ride requests, driver matching and pricing calculations in real time while maintaining low response times even during peak usage periods.
-
-2. Real-Time Data Handling
-
-The application depends heavily on continuous GPS location updates to track drivers and riders. Managing and synchronizing this real-time data accurately and efficiently is challenging especially when many users are in motion simultaneously.
-
-3. Reliability Under Poor Network Conditions
-
-Users often access the app in areas with unstable or slow internet connections. Ensuring that critical features such as ride requests, navigation and payments function reliably or fail gracefully under such conditions is a significant engineering challenge.
-
-4. Security and Data Privacy
-
-Uber handles sensitive information including user locations, personal details and payment data. Protecting this information from unauthorized access, fraud and data breaches requires strong security mechanisms and continuous monitoring.
-
-5. Payment System Complexity
-
-The app supports multiple payment methods across different countries. Integrating various payment gateways while complying with local financial regulations and ensuring secure and reliable transactions increases system complexity.
-
-6. Maintainability and Continuous Evolution
-
-Uber is constantly updated with new features and improvements. Engineers must design the system in a modular and maintainable way so that new changes do not break existing functionality which requires clean architecture and extensive testing.
-
-7. Cross-Platform Compatibility
-
-The application must provide a consistent user experience across different devices, screen sizes and operating systems such as Android and iOS. Supporting this wide range of platforms increases development and testing effort.
 ## Name of App:
 
 We chose the application Uber.
@@ -238,23 +209,35 @@ Finally, regulatory and compliance requirements add further complexity. Financia
 
 ## Part D: Software Construction Challenges
 
-### Performance and Scalability
-One major challenge in maintaining an app like Uber is ensuring that it performs well as the number of users grows. The system must handle millions of simultaneous ride requests, GPS updates, and payment transactions without slowing down. As usage increases, backend services such as ride matching and pricing must scale horizontally, which requires careful design of distributed systems, load balancing, and caching. Poor scalability can lead to slow response times, failed ride requests, or system outages during peak hours.
+Building and maintaining a large-scale ride-hailing application such as Uber involves several complex software engineering challenges. These challenges arise from the need to support millions of users, operate in real time and continuously evolve the system without disrupting existing services;
 
-### Security and Data Privacy
-Uber handles highly sensitive data, including user locations, personal details, and payment information. Maintaining strong security is challenging because the app relies heavily on network communication and third-party services such as payment gateways and map providers. Engineers must ensure secure data transmission, proper authentication, encryption of stored data, and protection against attacks such as data breaches or API abuse. Any weakness in security can lead to loss of user trust and serious legal consequences.
+1. Scalability and Performance
 
-### Testing Across Devices and OS Versions
-The Uber app runs on a wide range of devices with different hardware capabilities, screen sizes, and operating system versions. Ensuring that new updates work correctly across all these environments is difficult. A feature that works perfectly on a high-end phone may behave poorly or crash on low-end devices. This requires extensive testing, including automated tests and manual testing, which increases development time and complexity.
+Uber must handle a very high volume of concurrent users including riders and drivers across multiple regions. The system needs to efficiently process ride requests, driver matching and pricing calculations in real time while maintaining low response times even during peak usage periods.
 
-### Tight Coupling Between Features
-As the app evolves, features such as ride booking, payments, notifications, and ratings can become tightly coupled if not carefully designed. Tight coupling makes the system harder to modify because a change in one feature may unintentionally affect others. For example, changing the payment flow could impact ride completion or driver payouts. This reduces maintainability and increases the risk of introducing bugs during updates.
+2. Real-Time Data Handling
 
-### Backward Compatibility
-Uber must ensure that new versions of the app continue to work with older versions and existing backend services. Some users may not update their apps immediately, and drivers or riders may be using older devices. Maintaining backward compatibility requires engineers to support multiple API versions and avoid breaking changes, which adds complexity to both frontend and backend development.
+The application depends heavily on continuous GPS location updates to track drivers and riders. Managing and synchronizing this real-time data accurately and efficiently is challenging especially when many users are in motion simultaneously.
 
-### Reliability Under Poor Network Conditions
-In many regions, including parts of developing countries, network connectivity can be slow or unreliable. Uber must continue to function reasonably well under these conditions, for example by handling delayed GPS updates or retrying failed network requests. Designing the app to gracefully recover from network failures without confusing users or losing critical data is a significant engineering challenge.
+3. Reliability Under Poor Network Conditions
+
+Users often access the app in areas with unstable or slow internet connections. Ensuring that critical features such as ride requests, navigation and payments function reliably or fail gracefully under such conditions is a significant engineering challenge.
+
+4. Security and Data Privacy
+
+Uber handles sensitive information including user locations, personal details and payment data. Protecting this information from unauthorized access, fraud and data breaches requires strong security mechanisms and continuous monitoring.
+
+5. Payment System Complexity
+
+The app supports multiple payment methods across different countries. Integrating various payment gateways while complying with local financial regulations and ensuring secure and reliable transactions increases system complexity.
+
+6. Maintainability and Continuous Evolution
+
+Uber is constantly updated with new features and improvements. Engineers must design the system in a modular and maintainable way so that new changes do not break existing functionality which requires clean architecture and extensive testing.
+
+7. Cross-Platform Compatibility
+
+The application must provide a consistent user experience across different devices, screen sizes and operating systems such as Android and iOS. Supporting this wide range of platforms increases development and testing effort.
 
 ---
 
