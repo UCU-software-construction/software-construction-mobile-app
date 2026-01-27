@@ -207,3 +207,33 @@ Scalability is another challenge, as mobile money providers may have rate limits
 Finally, regulatory and compliance requirements add further complexity. Financial regulations, data protection laws, and telecom policies in Uganda may require additional validation, auditing, and reporting mechanisms, increasing development time and ongoing maintenance costs.
 
 ---
+
+## Part D: Software Construction Challenges
+
+### Performance and Scalability
+One major challenge in maintaining an app like Uber is ensuring that it performs well as the number of users grows. The system must handle millions of simultaneous ride requests, GPS updates, and payment transactions without slowing down. As usage increases, backend services such as ride matching and pricing must scale horizontally, which requires careful design of distributed systems, load balancing, and caching. Poor scalability can lead to slow response times, failed ride requests, or system outages during peak hours.
+
+### Security and Data Privacy
+Uber handles highly sensitive data, including user locations, personal details, and payment information. Maintaining strong security is challenging because the app relies heavily on network communication and third-party services such as payment gateways and map providers. Engineers must ensure secure data transmission, proper authentication, encryption of stored data, and protection against attacks such as data breaches or API abuse. Any weakness in security can lead to loss of user trust and serious legal consequences.
+
+### Testing Across Devices and OS Versions
+The Uber app runs on a wide range of devices with different hardware capabilities, screen sizes, and operating system versions. Ensuring that new updates work correctly across all these environments is difficult. A feature that works perfectly on a high-end phone may behave poorly or crash on low-end devices. This requires extensive testing, including automated tests and manual testing, which increases development time and complexity.
+
+### Tight Coupling Between Features
+As the app evolves, features such as ride booking, payments, notifications, and ratings can become tightly coupled if not carefully designed. Tight coupling makes the system harder to modify because a change in one feature may unintentionally affect others. For example, changing the payment flow could impact ride completion or driver payouts. This reduces maintainability and increases the risk of introducing bugs during updates.
+
+### Backward Compatibility
+Uber must ensure that new versions of the app continue to work with older versions and existing backend services. Some users may not update their apps immediately, and drivers or riders may be using older devices. Maintaining backward compatibility requires engineers to support multiple API versions and avoid breaking changes, which adds complexity to both frontend and backend development.
+
+### Reliability Under Poor Network Conditions
+In many regions, including parts of developing countries, network connectivity can be slow or unreliable. Uber must continue to function reasonably well under these conditions, for example by handling delayed GPS updates or retrying failed network requests. Designing the app to gracefully recover from network failures without confusing users or losing critical data is a significant engineering challenge.
+
+---
+
+## Part E: Group Reflection
+
+One of the most surprising aspects of analyzing this app was the level of complexity that exists behind features that appear simple to users. Actions such as requesting a ride or making a payment seem straightforward on the surface, but they rely on many interconnected systems working together in real time, including location tracking, pricing algorithms, payment processing, and network communication. The group was particularly surprised by how much coordination is required between frontend interfaces, backend services, and external systems to ensure that the app functions reliably and efficiently.
+
+This exercise also helped us understand why writing “working code” is not sufficient for software systems at this scale. In large applications like Uber, code must not only work but also be maintainable, scalable, secure, and resilient to failures. A solution that works for a small number of users may fail when millions of users interact with the system simultaneously. Engineers must therefore consider performance, error handling, future changes, and integration with other components, not just whether the code produces the correct output.
+
+From a teamwork perspective, we learned that effective collaboration is essential when dealing with complex software systems. Different members of the group focused on different aspects of the app, such as features, architecture, and potential challenges, which made it clear that no single person can fully understand or build such a system alone. Clear communication, division of responsibilities, and alignment on shared understanding were key to completing the task successfully. This reflects real-world software development, where teamwork and coordination are just as important as technical skills.
