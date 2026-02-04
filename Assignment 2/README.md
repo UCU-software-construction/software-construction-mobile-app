@@ -1,3 +1,26 @@
+## QUESTION ONE:
+Difference Between Programming and Software Construction
+1. **Programming as an Individual Activity**
+Programming is primarily an individual-focused activity where a single programmer is responsible for writing, testing and debugging a specific piece of code. The programmer works independently, concentrating on logic, syntax and correctness of the solution. Decision making is localized meaning the individual decides how to implement the solution without needing extensive coordination with others.
+Real world example
+In the process of building a house, programming is similar to one skilled worker assigned a specific task such as an electrician wiring a single room. The electrician works alone follows a predefined plan and ensures that the wiring functions correctly within that room. While the task is important it does not involve overseeing the entire house or coordinating all other workers. Likewise a programmer may write a login function or a calculation module independently ensuring it works correctly without managing the full software system.
+While
+**Software Construction as a Team Based Activity**
+Software construction is a collaborative and team oriented process that involves multiple professionals working together to develop a complete software system. It goes beyond writing code to include planning, architectural design, integration, testing, documentation and maintenance. This is because no single person can efficiently handle all these responsibilities, teamwork and communication are essential.
+Real world example 
+Software construction is comparable to constructing an entire house using a team of specialists. Architects design the structure, builders construct the walls, electricians install wiring, plumbers handle water systems, and inspectors ensure safety standards are met. Each worker contributes a part, but the house only becomes functional when all components are properly integrated. Similarly, in software construction, frontend developers, backend developers, database administrators, testers, and project managers work together to deliver a reliable and complete application.
+
+2.**Programming focuses on code correctness**
+Programming is mainly concerned with whether a piece of code runs correctly and produces the expected output. Once the code works, the programmer’s task is often considered complete.
+Real world example
+Programming is like installing a door that opens and closes properly. The task is successful once the door functions as intended. 
+While
+**Software construction emphasizes overall system quality and long-term sustainability.**
+Software construction considers broader quality attributes such as maintainability, scalability, security, performance and ease of future updates. These qualities ensure that the software remains useful and reliable over time.
+Real world example:
+Software construction is like designing the house so it can withstand weather allow future renovations and remain safe for many years. This involves choosing durable materials following building standards and planning for future expansion.
+Software construction also ensures that even after deployment, the system can be maintained, upgraded, and scaled without breaking.
+
 ## QUESTION THREE:
 Version control is very critical in team-based software development because it acts like a shared memory and safety net for the entire team. When multiple developers work on the same codebase, version control systems such as Git ensure that everyone’s changes are tracked, organized, and merged in a controlled way. Instead of files being overwritten or lost, each change is recorded with who made it, when, and why, creating accountability and clarity.
 
