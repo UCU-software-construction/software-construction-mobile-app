@@ -1,3 +1,14 @@
+## Assignment 2 End of Week 2
+---
+
+
+## Members 
+1. Alvin Rubagumya
+2. Agaba Itungo
+3. Mark Calvin Obba
+4. Nathaniel Mugenyi
+5. Isooba M Rachel
+
 ## QUESTION ONE: Explain the difference between programming and software construction using one real-world example
 
 **Programming as an Individual Activity**
@@ -47,3 +58,5 @@ On the other hand, it improves a developer's skills by enabling them learn from 
 
 ## QUESTION FIVE: Reflect briefly on how AI can help in understanding code without replacing learning
 Artificial Intelligence can support understanding code by acting as a smart assistant that explains logic, highlights patterns and helps debug errors making complex software concepts more approachable. Instead of replacing learning, it reinforces it by allowing developers to ask why code works, compare different approaches and explore best practices. In software construction and collaboration, Artificial Intelligence can improve productivity by clarifying unfamiliar codebases, generating documentation and suggesting improvements while the real learning still comes from human reasoning, design decisions, teamwork and hands-on problem-solving.
+
+
