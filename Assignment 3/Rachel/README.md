@@ -104,4 +104,44 @@ This microservices approach enables SafeBoda to manage a complex platform that c
 
 These examples show that microservices and API-based architectures are widely used not only by global companies like Netflix but also by African technology platforms
 
-#3.Find out other 2 companies that were using Microservices but later turned back to monolith and why they went back to it.
+# 3.Find out other 2 companies that were using Microservices but later turned back to monolith and why they went back to it.
+
+## 1. Amazon Prime Video
+
+Amazon Prime Video originally used a large number of microservices to manage different parts of its video streaming platform. These microservices handled tasks such as video analysis, encoding, quality checks, and content monitoring.
+
+However, engineers later realized that this architecture introduced high operational costs and unnecessary complexity. Each microservice required its own infrastructure, communication mechanisms, and monitoring systems. Because the services had to communicate with each other through network calls and cloud services, the system became expensive to run and difficult to manage.
+
+To address these issues, Amazon engineers redesigned part of the system by moving from many microservices to a more centralized monolithic architecture. Instead of separate services communicating through remote calls, several components were combined into a single application.
+
+Reasons they moved back toward a monolith
+
+Reduced infrastructure costs (fewer cloud services and network calls)
+
+Lower system complexity
+
+Improved performance because internal function calls replaced network communication
+
+Simpler system maintenance
+
+This change reportedly reduced operating costs significantly while still maintaining the functionality required by the platform.
+
+## Segment
+
+Segment, now part of Twilio, is a customer data platform that helps organizations collect, process, and route customer data to analytics and marketing tools. As the platform expanded, the engineering team adopted a microservices architecture in which many independent services handled tasks such as event collection, data processing, integrations, and storage.
+
+Over time, however, the system grew to more than 140 microservices, which created significant operational challenges. Managing such a large number of distributed services introduced complexity in deployment, monitoring, and debugging. According to the Segment engineering team, the architecture that was supposed to help the company move faster instead created serious difficulties. Engineers reported that much of their time was spent troubleshooting issues between services rather than building new features. As they explained, the team became “mired in exploding complexity,” where development velocity decreased while the number of defects increased.
+
+To address these challenges, Segment made the decision to collapse the 140+ microservices into a single monolithic architecture. By consolidating the services into one monolith, the system became significantly simpler to manage. The impact of this change was immediate. Test suites that previously took about an hour to complete were reduced to milliseconds, and developer productivity improved significantly. The engineering team reported shipping 46 improvements to shared libraries within a year, compared to 32 improvements during the microservices period.
+
+### Reasons Segment moved back to a monolith
+
+1. Operational complexity from managing over 140 microservices
+
+2. Reduced development velocity due to constant troubleshooting between services
+
+3. High defect rates caused by complex service interactions
+
+4. Improved performance and productivity after consolidating into a monolithic system
+
+This case demonstrates that while microservices can provide scalability and flexibility, they can also introduce significant complexity. In some cases, moving back to a well-designed monolithic architecture can improve system performance, developer productivity, and maintainability.
