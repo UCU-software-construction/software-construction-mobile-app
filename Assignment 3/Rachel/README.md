@@ -54,3 +54,54 @@ Despite their benefits, microservices also introduce challenges. Managing a larg
 Netflix addresses these challenges by using monitoring systems, automation tools, and orchestration technologies to manage and coordinate its services effectively.
 
 # 2. Find out other 2 companies that use Microservices and how it is working for them.
+
+## 1. M-Pesa (Safaricom – Kenya)
+
+M-Pesa is one of the most widely used mobile money platforms in Africa. It allows users to send and receive money, pay bills, and perform financial transactions using their mobile phones. The platform has become a core part of the digital economy in Kenya and other African countries.
+
+Modern digital platforms built around M-Pesa rely heavily on APIs and modular system architectures to process payments and communicate with other services. APIs act as the connection layer between mobile applications, payment providers, and enterprise systems such as banking platforms and accounting software.
+
+Safaricom introduced the Daraja API platform, which allows developers and businesses to integrate their systems directly with M-Pesa. Through this system, businesses can automate transactions such as customer-to-business payments, automated payouts, and transaction status checks.
+
+Modern payment systems that integrate with M-Pesa often use microservice-based architectures where the payment logic is separated into independent services. For example, systems may include a dedicated payment service that communicates with M-Pesa while other services handle user accounts, order processing, and notifications.
+
+#### How microservices help M-Pesa-based systems
+
+Scalability: Systems can process millions of transactions without overloading one component.
+
+Flexibility: Businesses can integrate additional payment providers or financial services easily.
+
+Reliability: Payment services can operate independently from other parts of the system.
+
+## 2. SafeBoda (Uganda)
+
+SafeBoda is a Ugandan technology company that provides ride-hailing and delivery services through a mobile application. The platform connects passengers with motorcycle taxi drivers and offers additional services such as digital payments and deliveries.
+
+Behind the SafeBoda platform is a modern backend architecture composed of multiple services and APIs that support different parts of the application, including ride matching, payments, driver management, and user accounts. Some backend systems are implemented as microservices built using technologies such as Node.js and Elixir.
+
+These microservices handle different responsibilities within the platform. For example:
+
+1. Ride booking service
+
+2. Driver management service
+
+3. Payment service
+
+4. Location and tracking service
+
+5. User account service
+
+Because each service operates independently, the platform can handle large numbers of users requesting rides at the same time while maintaining system reliability.
+
+**How microservices help SafeBoda**
+1. Independent scaling: Services such as ride matching or payment processing can scale depending on demand.
+
+2. Faster development: Engineers can update or improve individual services without affecting the entire platform.
+
+3. Reliability: If one service experiences problems, the rest of the application can continue operating.
+
+This microservices approach enables SafeBoda to manage a complex platform that connects thousands of drivers and passengers across cities in East Africa.
+
+These examples show that microservices and API-based architectures are widely used not only by global companies like Netflix but also by African technology platforms
+
+#3.Find out other 2 companies that were using Microservices but later turned back to monolith and why they went back to it.
